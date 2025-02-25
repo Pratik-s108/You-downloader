@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U-Downloader</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <img src="/U.png">
+  </nav>
+  <div class="container">
+    <h1>U-Downloader</h1>
+    
+    <form id="downloadForm">
+
+      <input type="text" id="urlInput" placeholder="Enter YouTube URL" required>
+      <input type="text" id="filenameInput" placeholder="Enter filename (e.g., myvideo.mp4)">
+      <br>
+      <label for="qualitySelect">Select Quality:</label>
+      <select id="qualitySelect">
+          <option value="240p">240p</option>
+          <option value="360p">360p</option>
+          <option value="480p">480p</option>
+          <option value="1080p">1080p</option>
+      </select>
+      <br>
+      <button type="submit" class="button"><span>Download </span></button>
+    </form>
+    
+    <p id="downloadStatus"></p>
+  
+    <footer>
+      <div id="Watermark"><img src="/U.png">
+      </div>
+      <div id="foot">© U-download All rights reserved.</div>
+    </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
